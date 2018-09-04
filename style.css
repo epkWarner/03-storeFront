@@ -3,51 +3,173 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-.topNav{
-    display: block;
-    text-align: center;
-    text-justify: distribute-all-lines;
+.navBar{
+    z-index: 1;
+    opacity: .7;
+    position: sticky;
+    position: -webkit-sticky;
     overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 4%;
     background-color: black;
-    opacity: 50%;
+    top: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-.topnav a{
+.navBar a{
     float: left;
-    display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 17pt;
+    max-height: 41px;
+    padding: 1% 2%;
+    text-decoration: none;
+}
+.navBar a:hover{
+    color: black;
+    background-color: gray;
 }
 .parent{
-    display: inline-block;
+    z-index: 0;
     width: 99%;
-    padding-top: 2%;
-    padding-left: .5%;
-    padding-right: .5%;
+    background: transparent;
+    display: flex;
+    flex: 0 1 auto;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
 }
 .item{
+    display: flex;
+    padding: 1%;
+    flex-direction: column;
+    flex: 0 1 auto;
+    width: 30%;
     content: '';
-    width: 20%;
-    height: 5em;
-    background-color: aliceblue;
-}
-.twitter-timeline{
-
+    opacity: 1;
+    background-color:white;
+    margin-right: 1em;
+    position: relative;
+    border-radius: 10px;
 }
 .twitCont{
-    width: 12%;
-    height: 90%;
-    float: left;
+    width: 20%;
+    height: 80%;
+    height: display-height*.8;
+    position: sticky;
+    top: 8%;
 }
 .prodBlock{
-    content: '';
-    display: inline;
-    padding: 2%;
-    float: right;
-    width: 81%;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    flex: 0 1 auto;
+    margin-bottom: 1em;
+    background-color:gray;
+    padding: 1em 0em 1em 1em;
+    flex-grow: 1;
+    height: 510px;
+    border-radius: 10px;
 };
+.main{
+    height: 10%;
+    width: 99%;
+    margin-top: 1%;
+}
+.main p{
+    text-align: right;
+    background-image:url("epkwSAssests/astrology-astronomy-background-image-956981.jpg");
+    font-size: 36pt;
+    color: lightgoldenrodyellow;
+    font-style: italic;
+    padding: 0 20% 0 0;
+    margin: 0;
+    font-family: Arnoldboecklin, fantasy;
+    font-style: italic;
+    opacity: .8;
+}
+.wrapper{
+    width: 75%;
+    max-width: 900px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.price{
+    text-align: right;
+    font-weight: bolder;
+    font-size: 14pt;
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    margin: 1% 0 1% 0;
+    padding: 1% 2% 1% 2%;
+    width: 96%;
+}
+.price::before{
+    float: left;
+    content: "$$"
+}
+.blurb{
+    font-family: Tahoma, Geneva, sans-serif;
+    justify-content: center;
+    font-size: 12pt;
+    margin: 1%;
+    min-height: 133px;
+    border: 0px;
+    padding: 0 1% 0 1%;
+    border-left: thin solid gray;
+    border-right: thin solid gray;
+}
+h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1% 2% 1% 2%;
+    margin: 1% 0 1% 0;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+button{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12pt;
+    font-weight: bolder;
+    margin: 1% 0 1% 0;
+    height: 30px;
+    padding-bottom: 1%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+footer{
+    z-index: 1;
+    opacity: .7;
+    text-align: center;
+    overflow: hidden;
+    background-color: black;
+    bottom: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1%;
+}
+footer a{
+    color: white;
+    text-align: center;
+    max-height: 41px;
+    padding: 1%;
+    text-decoration: none;
+    margin: 1%;
+}
+footer a:hover{
+    color: black;
+    background-color: gray;
+}
+span{
+    color: white
+}
